@@ -17,21 +17,21 @@ a {
 
 /*header*/
 header {
-    height: 100vh;
-    background-image: url(../img/hero2.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
+    position: fixed;
+    height: 7rem;
+    width: 100%;
+    background-color: rgba(136, 133, 133, 0.219);
+    border: 0.1rem solid #bcb9bdd7;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
 }
 header h1 {
     margin: 0;
 }
 nav {
-    position: fixed;
-    width: 100%;
     display: flex;
     justify-content: space-around;
     padding-top: 2rem;
-
 }   
 .input-buscador, select{
     border: none;
@@ -47,6 +47,12 @@ select {
     border-radius: 2.4rem;
 }
 
+.hero {
+    height: 100vh;
+    background-image: url(../img/hero2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
 /*main*/
 
 .contenedor-main {
@@ -123,21 +129,64 @@ select {
 /*form*/
 
 .suscripcion {
-    height: 45rem;
+    height: 65rem;
+    color: #ffffff;
     background-image: url(../img/form2.jpeg);
-    background-size: contain;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center center;
-    border-radius: 5rem;
     display: flex;
     flex-direction: column;
     align-items: end;
     justify-content: center;
 }
-.suscripcion div {
-    padding-right: 10rem;
-    color: #ffffff;
-}
-form {
+.contenedor-formulario {
     padding-right: 20rem;
+}
+.descripcion-formulario  {
+    width: 30rem;
+}
+.descripcion-formulario h2 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: #f47879;
+}
+.descripcion-formulario p {
+    font-size: 2.5rem;
+}
+
+.contenedor-input-formulario {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: #ffffff;
+    border: 0.1rem solid #dfe1e5;
+    border-radius: 2.4rem;
+    height: 3rem;
+}
+.contenedor-input-formulario input {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 2.4rem;
+    height: 3rem;
+}
+.contenedor-input-formulario input:nth-child(1) {
+    width: 85%;
+}
+
+/*footer*/
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20rem;
+}
+.contenedor-footer-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.6rem;
+    padding-top: 5rem;
 }
