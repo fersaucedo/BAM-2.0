@@ -8,7 +8,9 @@ html {
 li {
   list-style: none;
 }
-p, input, select {
+p,
+input,
+select {
   font-size: 1.6rem;
 }
 a {
@@ -32,6 +34,9 @@ header h2,
 footer h2 {
   font-family: "Major Mono Display", monospace;
 }
+a:visited {
+  color: #000000;
+}
 
 /*index*/
 
@@ -43,9 +48,6 @@ header {
 }
 header h2 {
   font-size: 2.5rem;
-}
-header a:visited {
-  color: #000000;
 }
 nav {
   width: 100%;
@@ -73,17 +75,14 @@ select {
 select {
   border-radius: 2.4rem;
 }
-@media (max-width:650px ) {
+@media (max-width: 650px) {
   nav {
-  flex-direction: column;
+    flex-direction: column;
   }
-} 
+}
 
 /*main*/
 
-main a:visited {
-  color: #000000;
-}
 .contenedor-main {
   padding-top: 5rem;
 }
@@ -101,6 +100,10 @@ main a:visited {
 .libros-main img {
   height: 20rem;
   width: 15rem;
+}
+.col {
+  display: flex;
+  justify-content: center;
 }
 .contenedor-link {
   width: 85%;
@@ -131,7 +134,7 @@ main a:visited {
   flex-wrap: wrap;
 }
 .info-banner {
-  width: 30rem;
+  width: 40rem;
   margin-right: 5rem;
 }
 .info-banner h2 {
@@ -154,23 +157,24 @@ main a:visited {
   font-size: 1.6rem;
 }
 
-@media (max-width:920px ) {
+@media (max-width: 920px) {
   .banner {
-    height: 50rem;
+    height: 70rem;
+    padding: 1rem!important; 
   }
-} 
+}
 
-@media (max-width:720px ) {
-   .info-banner {
+@media (max-width: 720px) {
+  .info-banner {
     margin-right: 0;
-   }
-} 
+  }
+}
 
-@media (max-width:450px ) {
-   .img-banner img:last-child {
+@media (max-width: 450px) {
+  .img-banner img:last-child {
     display: none;
-   }
-} 
+  }
+}
 
 /*form*/
 
@@ -220,21 +224,21 @@ main a:visited {
   width: 85%;
 }
 
-@media (max-width: 1000px ) {
+@media (max-width: 1000px) {
   .contenedor-formulario {
     padding-right: 0;
   }
   .suscripcion {
     height: 50rem;
     background-size: 130%;
-   }
-} 
+  }
+}
 @media (min-width: 360px) and (max-width: 440px) {
-   .suscripcion {
+  .suscripcion {
     height: 50rem;
     background-size: 230%;
-   }
-} 
+  }
+}
 
 /*footer*/
 
@@ -243,9 +247,6 @@ footer {
   justify-content: space-around;
   align-items: center;
   min-height: 20rem;
-}
-footer a:visited {
-  color: #000000;
 }
 .contenedor-footer-1 {
   width: 50rem;
@@ -272,7 +273,7 @@ footer a:visited {
   gap: 2rem;
 }
 
-@media (max-width: 550px ) {
+@media (max-width: 550px) {
   footer {
     flex-direction: column;
   }
@@ -286,7 +287,7 @@ footer a:visited {
     order: 1;
     margin-top: 0;
   }
-} 
+}
 
 /*PROXIMAMENTE*/
 
