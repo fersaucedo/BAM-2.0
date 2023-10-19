@@ -160,6 +160,12 @@ main a:visited {
   }
 } 
 
+@media (max-width:720px ) {
+   .info-banner {
+    margin-right: 0;
+   }
+} 
+
 @media (max-width:450px ) {
    .img-banner img:last-child {
     display: none;
@@ -214,13 +220,29 @@ main a:visited {
   width: 85%;
 }
 
+@media (max-width: 1000px ) {
+  .contenedor-formulario {
+    padding-right: 0;
+  }
+  .suscripcion {
+    height: 50rem;
+    background-size: 130%;
+   }
+} 
+@media (min-width: 360px) and (max-width: 440px) {
+   .suscripcion {
+    height: 50rem;
+    background-size: 230%;
+   }
+} 
+
 /*footer*/
 
 footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 20rem;
+  min-height: 20rem;
 }
 footer a:visited {
   color: #000000;
@@ -249,6 +271,22 @@ footer a:visited {
   display: flex;
   gap: 2rem;
 }
+
+@media (max-width: 550px ) {
+  footer {
+    flex-direction: column;
+  }
+  .contenedor-footer-1 {
+    width: 100%;
+    order: 2;
+    border: none;
+    padding-top: 3rem;
+  }
+  .contenedor-footer-2 {
+    order: 1;
+    margin-top: 0;
+  }
+} 
 
 /*PROXIMAMENTE*/
 
