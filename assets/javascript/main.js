@@ -8,24 +8,24 @@ categorias.addEventListener('change', (e)=> {
     switch (seleccion) {
         case "Todas las categorias":
 
-           window.location.href = "index.html";   
+           window.location.href = "../pages/todas.html";   
 
             break;
         case "Thriller":
-            window.location.href ="../pages/proximamente.html"
+            window.location.href ="../pages/thriller.html"
 
             break;
         case "Fantasia":
-            window.location.href ="../pages/proximamente.html"
+            window.location.href ="../pages/fantasia.html"
 
             break;
 
         case "Romance":
-            window.location.href ="../pages/proximamente.html"
+            window.location.href ="../pages/romance.html"
 
             break;
         case "Novela":
-            window.location.href ="../pages/proximamente.html"
+            window.location.href ="../pages/novela.html"
 
             break;
 

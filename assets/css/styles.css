@@ -112,7 +112,17 @@ select {
   justify-content: end;
   font-size: 1.6rem;
 }
+.modal-body img {
+  height: 40rem;
+  width: 30rem;
+}
 
+@media (max-width:460px ) {
+  .modal-body img {
+    height: 20rem;
+    width: 15rem;
+  }
+} 
 /*banner*/
 
 .banner {
