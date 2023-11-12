@@ -82,7 +82,13 @@ select {
 }
 
 /*main*/
-
+main h1 {
+  text-align: center;
+  font-family:Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-decoration: underline;
+  padding: 5rem;
+}
 .contenedor-main {
   padding-top: 5rem;
 }
@@ -96,6 +102,7 @@ select {
 }
 .libros-main {
   max-width: 90rem;
+  min-height: 50rem;
 }
 .libros-main img {
   height: 20rem;
@@ -122,6 +129,21 @@ select {
   height: 35rem;
   width: 25rem;
 }
+.modal-body button {
+  width: 10rem;
+  height: 3rem;
+  transition: background-color 0.3s ease;
+  background-color: #94c9ec8d;
+  border: none;
+  border-radius: 6%;
+  font-size: 1.2rem
+}
+.modal-body button:hover {
+  background-color: #9f53fc89;
+  border: .1rem solid #58575764;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
 
 @media (max-width:460px ) {
   .modal-body img {
@@ -129,6 +151,7 @@ select {
     width: 15rem;
   }
 } 
+
 /*banner*/
 
 .banner {
