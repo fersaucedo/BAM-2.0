@@ -5,6 +5,7 @@ categorias.addEventListener('change', (e)=> {
 
 
     let seleccion = categorias.value;
+    
     switch (seleccion) {
         case "Todas las categorias":
 

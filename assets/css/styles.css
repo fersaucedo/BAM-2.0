@@ -101,6 +101,9 @@ select {
   height: 20rem;
   width: 15rem;
 }
+.libros-main a:hover {
+  transform: scale(1.1);
+}
 .col {
   display: flex;
   justify-content: center;
@@ -112,9 +115,12 @@ select {
   justify-content: end;
   font-size: 1.6rem;
 }
+.modal-content p {
+  text-transform: uppercase;
+}
 .modal-body img {
-  height: 40rem;
-  width: 30rem;
+  height: 35rem;
+  width: 25rem;
 }
 
 @media (max-width:460px ) {
