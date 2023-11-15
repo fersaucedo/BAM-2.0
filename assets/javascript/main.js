@@ -35,3 +35,20 @@ categorias.addEventListener('change', (e)=> {
             break;
     }
 })
+
+
+// FORMULARIO
+
+const enviado = document.querySelector('input[type="submit"]');
+
+const input = document.querySelector('input[type="mail"]');
+
+
+enviado.addEventListener('click',(e)=> {
+
+    e.preventDefault();
+
+    swal("Felicitaciones🎉!!", "Te suscribiste al club de lectura. En breve te enviaremos toda la información del evento", "success");
+    
+    input.value = "";
+})
