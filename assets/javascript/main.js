@@ -1,7 +1,7 @@
 const categorias = document.querySelector('#categorias');
 
 
-categorias.addEventListener('change', (e)=> {
+categorias.addEventListener('change', ()=> {
 
 
     let seleccion = categorias.value;
